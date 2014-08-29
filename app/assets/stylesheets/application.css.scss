@@ -38,6 +38,7 @@
 
 #columns {
   background: #141;
+  position: relative;
 
   #main {
     margin-left: 17em;
@@ -50,6 +51,7 @@
     padding: 1em 2em;
     width: 13em;
     background: #141;
+    
   
     ul {
       padding: 0;
@@ -64,8 +66,11 @@
 
     #side_timestamp {
       color: #bfb;
-      margin-top: 23em;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 5px;
+      text-align: center;
     }
   }
 }
-/* END_HIGHLIGHT */
+/* END_HIGHLIGHT  */
