@@ -30,6 +30,7 @@ class LineItemsController < ApplicationController
     # @line_item = LineItem.new(line_item_params)
     # @line_item = @cart.line_items.build(product: product)
     @line_item = @cart.add_product(product.id)
+    session[:counter] = 0
 
     respond_to do |format|
       if @line_item.save
